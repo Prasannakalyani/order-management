@@ -42,7 +42,7 @@ The Order Management System is designed to streamline order processing and inven
 
 ```
 ┌─────────────────────────────────────────┐
-│         Frontend (React/HTML)            │
+│         Frontend (React)            │
 │     - User Interface                     │
 │     - Order Forms                        │
 │     - Dashboard & Analytics              │
@@ -72,8 +72,8 @@ The Order Management System is designed to streamline order processing and inven
 ## 🛠️ Tech Stack
 
 ### Frontend
-- **HTML5** - Markup structure
-- **CSS3** - Styling and responsive design
+- **React**
+- **TailwindCSS** - Styling and responsive design
 - **JavaScript (ES6+)** - Client-side logic and interactivity
 
 ### Backend
@@ -91,9 +91,9 @@ The Order Management System is designed to streamline order processing and inven
 - **Git** - Version control
 
 ### Language Composition
-- JavaScript: 98.1%
-- HTML: 1.7%
-- CSS: 0.2%
+- JavaScript: 600 %
+- React: 20 % 
+- TailwindCSS: 20 %
 
 ---
 
@@ -105,26 +105,20 @@ order-management/
 ├── backend/
 │   ├── config/
 │   │   ├── database.js
-│   │   └── environment.js
 │   ├── controllers/
 │   │   ├── orderController.js
-│   │   ├── productController.js
-│   │   └── customerController.js
 │   ├── models/
 │   │   ├── Order.js
-│   │   ├── Product.js
-│   │   └── Customer.js
 │   ├── routes/
 │   │   ├── orders.js
-│   │   ├── products.js
-│   │   └── customers.js
-│   ├── middleware/
-│   │   ├── auth.js
+│   ├── middlewar/
 │   │   └── errorHandler.js
 │   ├── .env
 │   ├── .gitignore
 │   ├── package.json
 │   └── server.js
+|   └── environment.js
+
 │
 ├── frontend/
 │   ├── index.html
@@ -133,15 +127,11 @@ order-management/
 │   │   └── responsive.css
 │   ├── js/
 │   │   ├── main.js
-│   │   ├── api.js
-│   │   ├── orders.js
-│   │   ├── products.js
-│   │   └── customers.js
+│   │   ├── api.js/
+│   │   ├── components/
+│   │   ├── data/
+│   │   ├── context/
 │   ├── pages/
-│   │   ├── dashboard.html
-│   │   ├── orders.html
-│   │   ├── products.html
-│   │   └── customers.html
 │   └── assets/
 │       └── images/
 │
@@ -372,15 +362,10 @@ backend/
 ├── __tests__/
 │   ├── controllers/
 │   │   ├── orderController.test.js
-│   │   ├── productController.test.js
-│   │   └── customerController.test.js
 │   ├── models/
 │   │   ├── Order.test.js
-│   │   ├── Product.test.js
-│   │   └── Customer.test.js
 │   └── routes/
 │       ├── orders.test.js
-│       └── products.test.js
 ```
 
 ### Testing Stack
